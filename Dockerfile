@@ -11,10 +11,8 @@ RUN \
     apt install -y \
         software-properties-common \
         ca-certificates \
-        gpg \
         curl \
         wget \
-        gettext-base \
-        less \
-        watch \
-        nano
+    && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
